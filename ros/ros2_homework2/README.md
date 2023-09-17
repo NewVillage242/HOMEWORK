@@ -1,4 +1,25 @@
-## PART 1
+# PART 1
+## PART 1-1
+To Fix the issue that GUI applications can't not work correctlly on MacOS.
+I followed [this video](https://www.youtube.com/watch?v=cNDR6Z24KLM&ab_channel=TechHara).
+
+First download `XQuartz` and let it listen on local IP.
+
+Then export system variable `DISPLAY` into `<local IP>:0`
+
+```shell
+# This to start GUI
+ros2 run turtlesim turtlesim_node
+
+# This to control turtle in another terminal console.
+ros2 run turtlesim turtle_teleop_key
+
+```
+
+The result is as bellow.
+<br>
+<img src="./image.png" width=300/>
+
 
 ## PART 1-2
 ```C
